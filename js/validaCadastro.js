@@ -80,7 +80,7 @@ function validaSenha(e){
     passStrengthMeter.value = 0;
     //verifica se é válida
     if(senha.match(regexSenha) == null){
-        passwordHelp.textContent = "A senha deve ter pelo menos 6 caracteres";
+        passwordHelp.textContent = "A senha deve ter entre 6 e 20 caracteres";
         passwordHelp.style.color = "red";
     }
     else if(senha.match(regexLetra) == null){
